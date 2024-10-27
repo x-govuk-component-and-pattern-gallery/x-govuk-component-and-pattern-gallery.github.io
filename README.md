@@ -1,6 +1,4 @@
-## Project Overview
-
-This project is designed to provide a user-friendly interface for exploring various design components published by different organisations within the UK public sector. It aggregates links to these components, allowing users to search for specific items or organisations quickly.
+Explore various design components published by different organisations within the UK public sector. It aggregates links to these components, allowing users to search for specific items or organisations quickly.
 
 ### Design system components added
 - GOV.UK Design System: https://design-system.service.gov.uk
