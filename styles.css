@@ -1,0 +1,147 @@
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+.light-mode .component-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px; /* Vertical spacing */
+}
+.light-mode .organisation-links a {
+    color: #0d6efd;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.dark-mode .component-item {
+    background-color: #333333;
+    border: 1px solid #555555;
+    margin-bottom: 20px; /* Vertical spacing */
+}
+
+/* Updated link colors for better visibility */
+.dark-mode .organisation-links a,
+.dark-mode .component-title a,
+.dark-mode #organisationNames a { /* Add this line */
+    color: #00BFFF; /* Deep Sky Blue */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover color for links */
+.dark-mode .organisation-links a:hover,
+.dark-mode .component-title a:hover,
+.dark-mode #organisationNames a:hover { /* Add this line */
+    color: #FFD700; /* Gold on hover */
+}
+
+/* General Component Styles */
+.component-item {
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 15px; /* Horizontal spacing */
+}
+.component-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.organisation-links {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.organisation-links li {
+    display: inline;
+}
+.organisation-links a {
+    text-decoration: none;
+}
+.organisation-links a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Switch Styles */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end; /* Align to the right */
+}
+.toggle-label {
+    margin-right: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Minimalistic Search Input Style */
+.search-input {
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 24px; /* Rounded corners */
+    padding: 10px 20px; /* Comfortable padding */
+    font-size: 16px; /* Font size similar to Google */
+    box-shadow: none; /* Remove default shadow */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+.search-input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Light shadow on focus */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+footer a {
+    color: #00BFFF; /* Ensure footer links are also visible in dark mode */
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #FFD700; /* Gold on hover */
+}
