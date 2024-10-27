@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Links</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body class="light-mode">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="mb-4">      
+                    A collection of components published by UK public sector departments as part of their design systems, featuring contributions from the following organisations —  <span id="organisationNames"></span> with more to come.
+                </h3>
+                <!-- Search Bar -->
+                <div class="mb-4">
+                    <label for="searchInput" class="visually-hidden">Search components or organisations</label>
+                    <input id="searchInput" type="text" class="form-control search-input" placeholder="Search components or organisations" aria-label="Search components or organisations">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Toggle Switch for Dark Mode -->
+                <div class="toggle-container">
+                    <span class="toggle-label" id="toggleLabel">Dark Mode:</span>
+                    <label class="switch" aria-labelledby="toggleLabel">
+                        <input type="checkbox" id="modeToggle" aria-label="Toggle dark mode">
+                        <span class="slider" aria-hidden="true"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="componentList" class="row" aria-labelledby="pageTitle">
+            <!-- Components will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer with Disclaimer and Bio -->
+    <footer>
+        <p class="mb-1">
+            <strong>Disclaimer:</strong> This project is not affiliated with GOV.UK or any UK government department in any official capacity.
+        </p>
+        <p class="mb-0">
+            This is a personal project developed by <a href="https://twitter.com/arindra" target="_blank" rel="noopener noreferrer">@arindra</a>.
+        </p>
+    </footer>
+
+    <!-- JavaScript for Mode Toggle and Component Display -->
+    <script src="components.js"></script>
+    <script>
+        // Light/Dark Mode Toggle
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+
+            // Update the checkbox state based on current mode
+            if (document.body.classList.contains('dark-mode')) {
+                modeToggle.checked = true;
+            } else {
+                modeToggle.checked = false;
+            }
+        });
+
+        // Function to populate organisation names in footer
+        function populateOrganisationNames(data) {
+            const organisationLinks = data.map(item => `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.organisation}</a>`).join(', ');
+            document.getElementById('organisationNames').innerHTML = organisationLinks;
+        }
+
+        // Main execution function
+        async function main() {
+            const data = await fetchData();
+            if (data) {
+                const componentMap = groupComponentsByName(data);
+                displayComponents(componentMap);
+                populateOrganisationNames(data); // Populate organisation names in the footer
+            }
+        }
+
+        // Run the main function
+        main();
+    </script>
+</body>
+</html>
