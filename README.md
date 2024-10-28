@@ -1,14 +1,16 @@
 Explore various design components published by different organisations within the UK public sector. It aggregates links to these components, allowing users to search for specific items or organisations quickly.
 
+Note: Personal experimentation and not affiliated to any departments or employer!
+
 ### Design system components added
 - GOV.UK Design System: https://design-system.service.gov.uk
 - Home Office Design System: https://design.homeoffice.gov.uk/
 - MoJ Design System: https://design-patterns.service.justice.gov.uk/
 - NHS design system: https://service-manual.nhs.uk/design-system
 
-### Upcoming/new request
+### Upcoming
 - Introducing pattern
-- Other department in [these list](https://github.com/ctdesign/gov-design-systems-list)
+- Adding more components from [these list](https://github.com/ctdesign/gov-design-systems-list)
 
 ## Contributing
 
