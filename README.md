@@ -7,6 +7,7 @@ Note: Personal experimentation and not affiliated to any departments or employer
 - Home Office Design System: https://design.homeoffice.gov.uk/
 - MoJ Design System: https://design-patterns.service.justice.gov.uk/
 - NHS design system: https://service-manual.nhs.uk/design-system
+- DWP design system: https://design-system.dwp.gov.uk/
 
 ### Upcoming
 - Introducing pattern
