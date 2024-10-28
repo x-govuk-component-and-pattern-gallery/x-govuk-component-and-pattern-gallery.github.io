@@ -456,5 +456,57 @@
               "url": "https://design-system.dwp.gov.uk/components/timeline"
           }
       ]
-  }
+  },
+  {
+    "organisation": "ONS",
+    "url": "https://service-manual.ons.gov.uk/design-system/components",
+    "components": [
+        { "name": "Accordion", "url": "https://service-manual.ons.gov.uk/design-system/components/accordion" },
+        { "name": "Address input", "url": "https://service-manual.ons.gov.uk/design-system/components/address-input" },
+        { "name": "Autosuggest", "url": "https://service-manual.ons.gov.uk/design-system/components/autosuggest" },
+        { "name": "Back to top", "url": "https://service-manual.ons.gov.uk/design-system/components/back-to-top" },
+        { "name": "Breadcrumbs", "url": "https://service-manual.ons.gov.uk/design-system/components/breadcrumbs" },
+        { "name": "Button", "url": "https://service-manual.ons.gov.uk/design-system/components/button" },
+        { "name": "Card", "url": "https://service-manual.ons.gov.uk/design-system/components/card" },
+        { "name": "Checkboxes", "url": "https://service-manual.ons.gov.uk/design-system/components/checkboxes" },
+        { "name": "Description list", "url": "https://service-manual.ons.gov.uk/design-system/components/description-list" },
+        { "name": "Details", "url": "https://service-manual.ons.gov.uk/design-system/components/details" },
+        { "name": "Document list", "url": "https://service-manual.ons.gov.uk/design-system/components/document-list" },
+        { "name": "Error details", "url": "https://service-manual.ons.gov.uk/design-system/components/error" },
+        { "name": "Error summary", "url": "https://service-manual.ons.gov.uk/design-system/components/error-panels" },
+        { "name": "Field", "url": "https://service-manual.ons.gov.uk/design-system/components/field" },
+        { "name": "Fieldset", "url": "https://service-manual.ons.gov.uk/design-system/components/fieldset" },
+        { "name": "Footer", "url": "https://service-manual.ons.gov.uk/design-system/components/footer" },
+        { "name": "Header", "url": "https://service-manual.ons.gov.uk/design-system/components/header" },
+        { "name": "Hero", "url": "https://service-manual.ons.gov.uk/design-system/components/hero" },
+        { "name": "Image", "url": "https://service-manual.ons.gov.uk/design-system/components/image" },
+        { "name": "Input", "url": "https://service-manual.ons.gov.uk/design-system/components/input" },
+        { "name": "Label", "url": "https://service-manual.ons.gov.uk/design-system/components/label" },
+        { "name": "Mutually exclusive", "url": "https://service-manual.ons.gov.uk/design-system/components/mutually-exclusive" },
+        { "name": "Pagination", "url": "https://service-manual.ons.gov.uk/design-system/components/pagination" },
+        { "name": "Panel - announcement", "url": "https://service-manual.ons.gov.uk/design-system/components/announcement-panel" },
+        { "name": "Panel - information", "url": "https://service-manual.ons.gov.uk/design-system/components/panel" },
+        { "name": "Panel - success", "url": "https://service-manual.ons.gov.uk/design-system/components/success-panel" },
+        { "name": "Panel - warning", "url": "https://service-manual.ons.gov.uk/design-system/components/warning-panels" },
+        { "name": "Password", "url": "https://service-manual.ons.gov.uk/design-system/components/password" },
+        { "name": "Phase banner", "url": "https://service-manual.ons.gov.uk/design-system/components/phase-banner" },
+        { "name": "Radios", "url": "https://service-manual.ons.gov.uk/design-system/components/radios" },
+        { "name": "Related content", "url": "https://service-manual.ons.gov.uk/design-system/components/related-content" },
+        { "name": "Section navigation", "url": "https://service-manual.ons.gov.uk/design-system/components/section-navigation" },
+        { "name": "Select", "url": "https://service-manual.ons.gov.uk/design-system/components/select" },
+        { "name": "Share page", "url": "https://service-manual.ons.gov.uk/design-system/components/share-page" },
+        { "name": "Skip to content", "url": "https://service-manual.ons.gov.uk/design-system/components/skip-to-content" },
+        { "name": "Status tag", "url": "https://service-manual.ons.gov.uk/design-system/components/status" },
+        { "name": "Summary", "url": "https://service-manual.ons.gov.uk/design-system/components/summary" },
+        { "name": "Table", "url": "https://service-manual.ons.gov.uk/design-system/components/table" },
+        { "name": "Table of contents", "url": "https://service-manual.ons.gov.uk/design-system/components/table-of-contents" },
+        { "name": "Tabs", "url": "https://service-manual.ons.gov.uk/design-system/components/tabs" },
+        { "name": "Textarea", "url": "https://service-manual.ons.gov.uk/design-system/components/textarea" },
+        { "name": "Timeline", "url": "https://service-manual.ons.gov.uk/design-system/components/timeline" },
+        { "name": "Timeout modal", "url": "https://service-manual.ons.gov.uk/design-system/components/timeout-modal" },
+        { "name": "Upload", "url": "https://service-manual.ons.gov.uk/design-system/components/upload" },
+        { "name": "Video", "url": "https://service-manual.ons.gov.uk/design-system/components/video" }
+    ]
+}
+
 ]
