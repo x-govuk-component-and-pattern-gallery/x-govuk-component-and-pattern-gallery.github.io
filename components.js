@@ -41,11 +41,12 @@ function groupComponentsByName(data) {
 
           // Initialize the entry if not already in the map
           if (!componentMap[displayName]) {
-              componentMap[displayName] = { name: displayName, items: [] };
+              componentMap[displayName] = { name: displayName, items: [], variantCount: 0 };
           }
 
           // Add organisation and URL to this component entry
           componentMap[displayName].items.push({ organisation, url });
+          componentMap[displayName].variantCount = prefixCount[baseName]; // Set variant count
       });
   });
 
@@ -73,25 +74,29 @@ function displayComponents(componentMap, searchTerm = "") {
           const componentDiv = document.createElement("div");
           componentDiv.classList.add("component-item", "col-12", "col-md-6", "col-lg-4");
 
+          // Component Title
           const title = document.createElement("div");
           title.classList.add("component-title");
           title.textContent = component.name;
           componentDiv.appendChild(title);
 
-          // Sort organisation links alphabetically within each component
-          const sortedItems = component.items.sort((a, b) => a.organisation.localeCompare(b.organisation));
+          // Variant Count
+          const variantCount = document.createElement("div");
+          variantCount.classList.add("variant-count"); // Use CSS class for styling
+          variantCount.textContent = `number of variant(s) ${component.variantCount}`;
+          componentDiv.appendChild(variantCount);
 
+          // Organisation Links
+          const sortedItems = component.items.sort((a, b) => a.organisation.localeCompare(b.organisation));
           const linkList = document.createElement("ul");
           linkList.classList.add("organisation-links");
 
           sortedItems.forEach(({ organisation, url }) => {
               const listItem = document.createElement("li");
-
               const link = document.createElement("a");
               link.href = url;
               link.textContent = organisation;
               link.target = "_blank";
-
               listItem.appendChild(link);
               linkList.appendChild(listItem);
           });

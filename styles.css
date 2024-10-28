@@ -131,6 +131,14 @@ input:checked + .slider:before {
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Light shadow on focus */
 }
 
+/* Variant Count Styling */
+.variant-count {
+    color: #505a5f;
+    font-size: 0.9rem; /* Adjust font size to match organisation links */
+    margin-top: 5px;
+}
+
+
 /* Footer Styles */
 footer {
     margin-top: 30px;
@@ -145,3 +153,4 @@ footer a {
 footer a:hover {
     color: #FFD700; /* Gold on hover */
 }
+
